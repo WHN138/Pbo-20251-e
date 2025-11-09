@@ -9,8 +9,15 @@ class LuasLingkaran
         $rumus = LuasLingkaran::phi * $this->jari * $this->jari;
         echo "Ukuran Lingkaran dari {$nama} adalah : $rumus";
     }
+
+    public static function testing()
+    {
+        echo "ini dari static";
+    }
 }
 
 $lingkaran = new LuasLingkaran();
 $lingkaran->jari = 16;
 $lingkaran->tampil('kepala lu');
+
+LuasLingkaran::testing();
